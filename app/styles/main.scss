@@ -1,0 +1,118 @@
+@import 'variables';
+
+.container {
+    max-width: 1300px;
+    min-width: 800px;
+    max-height: 1200px;
+    min-height: 750px;
+    margin: 0 auto;
+    border: 5px solid red
+    border-radius: 8px;
+    background-color: green
+    margin-top: 20px;
+    position: relative;
+}
+
+.header {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bolder;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 60px;
+    background-color: red
+    color: black
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.image-form {
+    width: 50%;
+    top: 59px;
+    bottom: 0px;
+    left: 0px;
+    border-right: 5px solid red
+    position: absolute;
+    overflow: auto;
+    padding-bottom: 30px;
+}
+
+.image-gallery {
+    width: 50%;
+    top: 59px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    overflow-x: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.image-thumbnail {
+    width: 29%;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.image-detail {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 90%;
+}
+
+.form-url {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bolder;
+    margin-left: 3.5%;
+    margin-top: 30px;
+    padding: 5px;
+    width: 90%;
+}
+
+.form-caption {
+    @extend .form-url;
+}
+
+.button {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    background-color: blue
+    border-radius: 8px;
+    border: 2px solid green
+    line-height: 50px;
+    text-align: center;
+    color: red
+    text-shadow: -1px -1px 1px;
+    margin-top: 15px;
+    margin-right: 4%;
+    float: right;
+    width: 140px;
+    height: 50px;
+    box-shadow: inset   1px -2px 1px orange,
+                        3px 3px  3px yellow;
+
+    &:hover {
+        box-shadow: inset   2px -2px 2px yellow,
+                            2px 2px  2px orange;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+
+    &:active {
+        margin-top: 16px;
+        margin-bottom: -16px;
+        box-shadow: inset   2px -2px 2px red,
+                            1px 1px  1px blue;
+    }
+}
